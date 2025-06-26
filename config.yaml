@@ -1,0 +1,12 @@
+log_level: "debug"                   # options: debug, info, silent
+http_port: 29999                     # port the forwarder listens on
+udp_address: "127.0.0.1:27500"       # HLstatsX/Z daemon destination
+proxy_key: "yourkey"                 # HLstatsX/Z ProxyKey setting
+
+servers:
+  - path: "/server1"                 # URL path for incoming logs
+    ip: "64.74.97.164"               # Spoofed IP for HLstatsX/Z
+    port: "27015"
+  - path: "/server2"
+    ip: "64.74.97.164"
+    port: "27016"
